@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="3;url=https://fxo.co/ItWS">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #fef6e4;
+            padding: 50px;
+        }
+        .countdown {
+            font-size: 24px;
+            color: #ff0050;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #ff0050;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 Redirecting You...</h1>
+    <p>You will be automatically redirected in <span id="countdown">3</span> seconds.</p>
+    <p>If you are not redirected, click below:</p>
+    <a href="https://fxo.co/ItWS" class="button">Click to Continue</a>
+
+    <script>
+        // 3秒倒计时显示
+        let seconds = 3;
+        const countdownEl = document.getElementById("countdown");
+        
+        const timer = setInterval(() => {
+            seconds--;
+            countdownEl.textContent = seconds;
+            if (seconds <= 0) clearInterval(timer);
+        }, 1000);
+    </script>
+</body>
+</html>
